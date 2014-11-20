@@ -6,7 +6,9 @@
 
 <div class="well">
   <% @cat.toys.each do |toy| %>
-    <%= toy.name %>
+  <ul>
+    <li><%= link_to toy.name, toy_path(@cat) %></li>
+  </ul>
   <% end %>
 
   </p>

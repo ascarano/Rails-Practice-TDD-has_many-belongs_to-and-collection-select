@@ -5,7 +5,7 @@
     <%= f.text_field :name, class: "form-control" %>
   </div>
 
-  <em>insert collection select for Cat</em>
+  <%= f.collection_select(:cat_id, Cat.all, :id, :name, {:prompt => "Select a Cat"}, {class:"form-control"}) %>
   <br>
   <br>
 

@@ -19,7 +19,7 @@
           <%= link_to toy.name, toy_path(toy) %>
         </td>
         <td>
-          <em>Replace this with a link to the cat who owns this toy</em>
+          <%= toy.cat.name %>
         </td>
       </tr>
     <% end %>
